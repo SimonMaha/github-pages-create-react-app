@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,YACE,gBACF,CAEA,WACE,kBACF,CANA,uBACI,eACJ","file":"main.d8cd4162.chunk.css","sourcesContent":[".announcement-list__li {\r\n    list-style: none;\r\n}\r\n"]}
