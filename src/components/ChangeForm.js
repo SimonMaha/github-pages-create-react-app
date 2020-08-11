@@ -32,7 +32,7 @@ export default class ChangeForm extends PureComponent {
     render() {
       const {onAddClick, item} = this.props
       return  (
-        <div className="">
+        <div className="text-center">
           <h2 className="display-5 text-center">
             New Announcement
           </h2>

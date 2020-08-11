@@ -1,7 +1,7 @@
 import React, {PureComponent} from 'react'
 import AnnouncementList from './AnnouncementList'
 import ChangeForm from './ChangeForm'
-import 'bootstrap/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import './style.css'
 import nextId from 'react-id-generator'
 
@@ -18,12 +18,12 @@ class App extends PureComponent {
         var filteredAnnouncements = this.state.searchValue.length > 0 ? curAnnouncement : this.state.announcements;
         return (
             <div className="container">
-                <div className="jumbotron">
+                <div>
                     <h1 className="display-3 text-center">
                         Announcement Website
                     </h1>
                 </div>
-                <div className="text-center">
+                <div className="text-center marginBot">
                   <label htmlFor="search-by-title">
                     Search
                   </label>

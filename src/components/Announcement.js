@@ -1,10 +1,11 @@
 import React, {PureComponent} from 'react'
+import './style.css'
 
 class Announcement extends PureComponent {
     render() {
         const {announcement, deleteClick, editClick, openClick, isOpen, allAnnoucements} = this.props;
         var similarAnnoucements = isOpen ? this.calculateSimilarAnnouncements(announcement, allAnnoucements) : [];
-        const body = isOpen && <div className="card-body">
+        const body = isOpen && <div className="card-body marginTop">
             <h6 className="card-subtitle text-muted">
                 creation date: {(new Date(announcement.date)).toDateString()}
             </h6>
@@ -53,8 +54,8 @@ class Announcement extends PureComponent {
         if (!xTitleExist) {
           return false;
         }
-        for (var item of xDescriptionWords) {
-          if (currentDescriptionWords.includes(item)) {
+        for (var item1 of xDescriptionWords) {
+          if (currentDescriptionWords.includes(item1)) {
             similars.push(x);
             break;
           }
